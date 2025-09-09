@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emergency Assistance Network</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.542.0",
+    "class-variance-authority": "https://aistudiocdn.com/class-variance-authority@^0.7.1",
+    "clsx": "https://aistudiocdn.com/clsx@^2.1.1",
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.8.2",
+    "qrcode": "https://aistudiocdn.com/qrcode@^1.5.4",
+    "tailwind-merge": "https://aistudiocdn.com/tailwind-merge@^3.3.1",
+    "html5-qrcode": "https://aistudiocdn.com/html5-qrcode@^2.3.8"
+  }
+}
+</script>
+</head>
+  <body class="bg-background text-foreground">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              border: 'hsl(345, 100%, 90%)',
+              input: 'hsl(345, 100%, 90%)',
+              ring: 'hsl(340, 82%, 60%)',
+              background: 'hsl(350, 100%, 98%)',
+              foreground: 'hsl(350, 60%, 30%)',
+              primary: {
+                DEFAULT: 'hsl(340, 82%, 60%)',
+                foreground: 'hsl(0, 0%, 100%)',
+              },
+              secondary: {
+                DEFAULT: 'hsl(345, 100%, 95%)',
+                foreground: 'hsl(340, 82%, 60%)',
+              },
+              destructive: {
+                DEFAULT: 'hsl(0, 72%, 51%)',
+                foreground: 'hsl(0, 0%, 100%)',
+              },
+              muted: {
+                DEFAULT: 'hsl(345, 100%, 95%)',
+                foreground: 'hsl(350, 20%, 45%)',
+              },
+              accent: {
+                DEFAULT: 'hsl(345, 100%, 92%)',
+                foreground: 'hsl(340, 82%, 40%)',
+              },
+              card: {
+                DEFAULT: 'hsl(0, 0%, 100%)',
+                foreground: 'hsl(350, 60%, 30%)',
+              },
+            },
+            borderRadius: {
+              lg: `0.5rem`,
+              md: `calc(0.5rem - 2px)`,
+              sm: `calc(0.5rem - 4px)`,
+            },
+            keyframes: {
+              "accordion-down": {
+                from: { height: 0 },
+                to: { height: "var(--radix-accordion-content-height)" },
+              },
+              "accordion-up": {
+                from: { height: "var(--radix-accordion-content-height)" },
+                to: { height: 0 },
+              },
+              "heart-pulse": {
+                "0%, 100%": { transform: "scale(1)" },
+                "50%": { transform: "scale(1.15)" },
+              },
+              "tap-burst": {
+                "0%": { transform: "scale(0) translate(-50%, -50%)", opacity: "0.8" },
+                "100%": { transform: "scale(1.5) translate(-50%, -50%)", opacity: "0" },
+              }
+            },
+            animation: {
+              "accordion-down": "accordion-down 0.2s ease-out",
+              "accordion-up": "accordion-up 0.2s ease-out",
+              "heart-pulse": "heart-pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite",
+              "tap-burst": "tap-burst 0.7s ease-out forwards",
+            },
+          }
+        },
+        plugins: [],
+      }
+    </script>
+  </body>
+</html>

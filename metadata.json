@@ -1,0 +1,7 @@
+{
+  "name": "Emergency Assistance Network",
+  "description": "A web application to connect skilled professionals with people who need emergency assistance via QR codes. Users can register as helpers, generate QR codes, and scan QR codes to find nearby professionals.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
